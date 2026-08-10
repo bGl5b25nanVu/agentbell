@@ -1,0 +1,19 @@
+---
+name: Announcements
+description: Product announcements and release notes
+labels:
+  - announcement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Release announcements
+
+        Subscribe to this category to follow AgentBell releases and product updates.
+  - type: textarea
+    id: notes
+    attributes:
+      label: Release notes
+      description: What's new in this release
+    validations:
+      required: true
