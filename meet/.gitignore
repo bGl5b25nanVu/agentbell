@@ -1,0 +1,10 @@
+node_modules/
+dist/
+src/assets.js
+.dev-state/
+.env
+.env.*
+.dev.vars*
+test-results/
+*.local.json
+*.log

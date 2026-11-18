@@ -1,0 +1,17 @@
+{
+  "main_module": "worker.js",
+  "compatibility_date": "2026-11-18",
+  "bindings": [
+    { "name": "ROOMS", "type": "durable_object_namespace", "class_name": "MeetingRoom" }
+  ],
+  "exports": {
+    "MeetingRoom": { "type": "durable-object", "storage": "sqlite" }
+  },
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 0.1,
+    "redact_query_string": true,
+    "logs": { "enabled": true, "invocation_logs": false },
+    "traces": { "enabled": true, "head_sampling_rate": 0.1 }
+  }
+}
